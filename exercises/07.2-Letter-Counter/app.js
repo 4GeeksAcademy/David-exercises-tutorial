@@ -2,5 +2,10 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+for(let char of par.toLowerCase()){
+    if(char !== " "){
+        counts[char] = par.toLowerCase().split(char).length - 1;
+    }
+}
 
 console.log(counts);
